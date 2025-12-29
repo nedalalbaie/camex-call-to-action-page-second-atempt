@@ -178,37 +178,37 @@
   </body>
 
   <script>
-    // const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    // const appStoreLink = "https://apps.apple.com/us/app/camexeat/id6741780650";
-    // const playStoreLink =
-    //   "https://play.google.com/store/apps/details?id=ly.camex.eat.customer&hl=en&pli=1";
+    const appStoreLink = "https://apps.apple.com/us/app/camexeat/id6741780650";
+    const playStoreLink =
+      "https://play.google.com/store/apps/details?id=ly.camex.eat.customer&hl=en&pli=1";
 
-    // let timeLeft = 4;
-    // const timerText = document.getElementById("timer-text");
-    // const progressRing = document.getElementById("progress-ring");
-    // const circumference = 2 * Math.PI * 58;
+    let timeLeft = 4;
+    const timerText = document.getElementById("timer-text");
+    const progressRing = document.getElementById("progress-ring");
+    const circumference = 2 * Math.PI * 58;
 
-    // const interval = setInterval(() => {
-    //   timeLeft--;
-    //   timerText.textContent = timeLeft;
+    const interval = setInterval(() => {
+      timeLeft--;
+      timerText.textContent = timeLeft;
 
-    //   // Update progress ring offset
-    //   const offset = circumference - (timeLeft / 4) * circumference;
-    //   progressRing.style.strokeDashoffset = offset;
+      // Update progress ring offset
+      const offset = circumference - (timeLeft / 4) * circumference;
+      progressRing.style.strokeDashoffset = offset;
 
-    //   if (timeLeft <= 0) {
-    //     clearInterval(interval);
-    //     timerText.textContent = "0";
+      if (timeLeft <= 0) {
+        clearInterval(interval);
+        timerText.textContent = "0";
 
-    //     if (/android/i.test(userAgent)) {
-    //       window.location.href = playStoreLink;
-    //     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    //       window.location.href = playStoreLink;
-    //     } else {
-    //       window.location.href = playStoreLink;
-    //     }
-    //   }
-    // }, 1000);
+        if (/android/i.test(userAgent)) {
+          window.location.href = playStoreLink;
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          window.location.href = playStoreLink;
+        } else {
+          window.location.href = playStoreLink;
+        }
+      }
+    }, 1000);
   </script>
 </html>
