@@ -7,7 +7,7 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <script src="https://cdn.tailwindcss.com"></script>
-          <link rel="icon" href="assets/camex-logo.png" type="image/png" />
+          <link rel="icon" href="assets/Camex Eat- logo.png" type="image/png" sizes="any"    />
       <link href="fonts.googleapis.com" rel="stylesheet" />
       <title>تحميل تطبيق كامكس إيت</title>
 
@@ -139,5 +139,17 @@
         </footer>
       </main>
     </body>
+
+    <script>
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            console.log("This is an Android device.");
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            console.log("This is an iOS device.");
+        } else {
+            console.log("This is likely a desktop or another OS.");
+        }
+    </script>
   </html>
 </html>
