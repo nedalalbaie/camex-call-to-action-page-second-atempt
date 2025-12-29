@@ -204,9 +204,9 @@
         if (/android/i.test(userAgent)) {
           window.location.href = playStoreLink;
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-          window.location.href = playStoreLink;
+          window.location.href = appStoreLink;
         } else {
-          window.location.href = playStoreLink;
+          // window.location.href = playStoreLink;
         }
       }
     }, 1000);
